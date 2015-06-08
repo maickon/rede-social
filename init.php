@@ -8,7 +8,7 @@
 
 //base path
 define(BASE_PATH, dirname(__FILE__));
-define(BASE_URL, 'http://127.0.0.1/rede_social');
+define(BASE_URL, 'http://127.0.0.1/rede-social-maickon');
 
 function __autoload($classname){
 	$path = "class/";
