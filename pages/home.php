@@ -15,9 +15,9 @@ $tag->div('class="container"');
 					$tag->form('action="'.$config->create_user_path.'" method="post"');						
 						$tag->div('class="form-group"');
 							$tag->label('for="email"');
-								$tag->imprime('Login');
+								$tag->imprime('E-mail');
 							$tag->label;
-							$tag->input('type="email" class="form-control" id="email" required placeholder="Senha" name="cadastro[login]"');
+							$tag->input('type="email" class="form-control" id="email" required placeholder="E-mail" name="cadastro[login]" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" ');
 						$tag->div;
 						
 						$tag->div('class="form-group"');
@@ -102,20 +102,20 @@ $tag->div('class="container"');
 				$tag->div;
 				
 				$tag->div('class="panel-body"');
-					$tag->form(' action="/login" method="post"');
+					$tag->form(' action="'.$config->login_path.'" method="post"');
 					
 						$tag->div('class="form-group"');
 							$tag->label('for="email"');
-								$tag->imprime('Email');
+								$tag->imprime('E-mail');
 							$tag->label;
-							$tag->input('type="email" class="form-control" id="email" placeholder="E-mail/Senha" name="cadastro[login]"');
+							$tag->input('type="email" required class="form-control" id="email" placeholder="E-mail" name="cadastro[login]" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" ');
 						$tag->div;
 					
 						$tag->div('class="form-group"');
 							$tag->label('for="senha"');
 								$tag->imprime('Senha');
 							$tag->label;
-							$tag->input('type="senha" class="form-control" id="senha" placeholder="Senha" name="cadastro[senha]"');
+							$tag->input('type="password" required class="form-control" id="senha" placeholder="Senha" name="cadastro[senha]"');
 						$tag->div;
 						
 						$tag->button('type="submit" class="btn btn-default"');

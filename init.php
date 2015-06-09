@@ -15,7 +15,7 @@ function __autoload($classname){
 	$diretorio = dir(BASE_PATH.'/'.$path);
 	$dir = array();
 	
-	while($arquivo = $diretorio -> read()):
+	while($arquivo = $diretorio->read()):
 		$dir[] = $arquivo;
 	endwhile;
 	

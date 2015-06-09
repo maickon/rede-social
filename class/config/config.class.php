@@ -15,7 +15,8 @@ class Config{
 		
 		//cadastrar user
 		$this->create_user_path		= "form/usuario/create.php";
-	
+		
+		$this->login_path 			= "form/login/login.php";
 	}
 }
 ?>

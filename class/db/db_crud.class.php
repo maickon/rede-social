@@ -56,4 +56,11 @@ class Db_crud{
 		return $query;
 	}
 	
+	function buscar_usuario($table, $email, $senha){
+		$senhaMd5 = md5($senha);
+		$query = "SELECT * FROM {$table} WHERE login = '{$email}' AND senha = '{$senhaMd5}'";
+		$resultado = mysql_query($query) or die(mysql_error());
+		return mysql_fetch_object($resultado);
+	}
+	
 }
