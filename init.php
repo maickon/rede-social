@@ -36,10 +36,14 @@ function __autoload($classname){
 	endforeach;
 	
 }
+//intancia de configuracao
+$config = new Config();
+//instancia de uma tag
+$tag = new Tags();
 
 //menus
-$labels = array('Home','Projeto no Git','Sobre', array('Tipos','Tipo 1','Tupo 2'));
-$links = array('?p=home','?p=git','?p=sobre', array('#',' ?p=1','?p=2'));
+$labels = array('Home','Projeto no Git','Sobre');
+$links = array('?p=home','https://github.com/maickon/rede-social');
 
 define(HOME, 'home');
 define(HOME_PAGE, 'pages/home.php');
