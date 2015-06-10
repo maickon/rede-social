@@ -43,7 +43,7 @@ $tag = new Tags();
 
 //menus
 $labels = array('Home','Projeto no Git','Sobre');
-$links = array('?p=home','https://github.com/maickon/rede-social');
+$links = array('?p=home','https://github.com/maickon/rede-social','?p=sobre');
 
 define(HOME, 'home');
 define(HOME_PAGE, 'pages/home.php');
