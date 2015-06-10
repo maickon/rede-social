@@ -64,13 +64,13 @@ class FooterBar{
 						if($m == count($this->menus)-1):
 							$this->tag->imprime(' - ');
 							$this->tag->br();
-							$this->tag->a('href="https://www.facebook.com/maickon.rangel" target="blank" class="footer-fonte"');
+							$this->tag->a('href="https://www.facebook.com/maickonr" target="blank" class="footer-fonte"');
 								$this->tag->imprime($this->programer);
 							$this->tag->a;
 							
-							$this->tag->a('href="index.php" class="footer-fonte"');
-								$this->tag->imprime($this->copyright);
-							$this->tag->a;
+							
+							$this->tag->imprime($this->copyright);
+						
 
 						endif;
 					endif;
