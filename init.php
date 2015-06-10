@@ -9,6 +9,10 @@
 //base path
 define(BASE_PATH, dirname(__FILE__));
 define(BASE_URL, 'http://127.0.0.1/rede-social-maickon');
+define(USER_BASE_URL, 'http://127.0.0.1/rede-social-maickon/form/usuario');
+
+//carrega a pasta funcoes
+require_once BASE_PATH.'/funcoes/funcoes.php';
 
 function __autoload($classname){
 	$path = "class/";
