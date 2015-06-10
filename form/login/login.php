@@ -1,5 +1,5 @@
 <?php
-
+session_start('login');
 require_once '../../init.php';
 
 $db = new Db_crud();
@@ -7,17 +7,13 @@ $db = new Db_crud();
 $user = new Usuario();
 
 $user->login = $_POST['cadastro']['login'];
-$user->senha = md5($_POST['cadastro']['senha']);
-
-echo '<br>';
-echo $user->login;
-echo '<br>';
-echo $user->senha;
+$user->senha = $_POST['cadastro']['senha'];
 
 if($db->buscar_usuario('usuario', $user->login, $user->senha)):
-	echo 'sucesso';
+	$_SESSION["user_ativo"] = $user->login;
+	header('Location:'.USER_BASE_URL.'/index.php?login=true');
 else:
-	echo 'fracasso';
+	header('Location:'.BASE_URL.'/index.php?login=false');
 endif;
 
 
