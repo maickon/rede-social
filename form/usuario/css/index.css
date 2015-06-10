@@ -1,0 +1,81 @@
+@CHARSET "ISO-8859-1";
+#backgraund_user{
+	width: 100%;
+    float: left;
+    border: 6px solid rgb(238,238,238);
+}
+
+#gravatar_user{
+	width: 15%;
+    position: relative;
+    bottom: 80px;
+    left: 40px;
+    float: left;
+}
+
+#post_box_user{
+	float: left;
+    top: 50px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(238,238,238); 
+}
+
+#username{
+	width: 100%;
+    margin-left: 45px;
+	font-weight: bold;
+}
+
+#msg_box_user{
+	margin-top: 40px;
+}
+.red{
+	background-color: red;
+}
+
+.blue{
+	background-color: blue;
+}
+.backgraund_panel_score{
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 100%, rgba(243,243,243,1) 100%, rgba(237,237,237,1) 100%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(243,243,243,1)), color-stop(100%,rgba(243,243,243,1)), color-stop(100%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 100%,rgba(243,243,243,1) 100%,rgba(237,237,237,1) 100%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 100%,rgba(243,243,243,1) 100%,rgba(237,237,237,1) 100%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 100%,rgba(243,243,243,1) 100%,rgba(237,237,237,1) 100%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 100%,rgba(243,243,243,1) 100%,rgba(237,237,237,1) 100%,rgba(255,255,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#notificatios{
+	width: 10%;
+    text-align: left;
+    float: right;
+    background-color: red;
+}
+
+.icon_notification{
+	width: 4%;
+    position: relative;
+    float: right;
+    margin: 4px;
+}
+
+.icon_message{
+    width: 4%;
+    position: relative;
+    float: right;
+    margin: 4px;
+}
+
+.icon_friend{
+    width: 4%;
+    position: relative;
+    float: right;
+    margin: 4px;
+}
+
+.textarea_user{
+	width: 100%;
+}
