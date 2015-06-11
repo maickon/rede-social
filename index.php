@@ -16,17 +16,10 @@ global $tag;
 	$tag->div('class="container"');
 		$tag->div('class="row"');
 			$tag->div('class="col-md-12"');
-				if(isset($_GET['success']) && $_GET['success'] == 'true'):
-					$tag->div('class="alert alert-success" role="alert"');
-						$tag->imprime(DB_MSG_SUCCESS);
-					$tag->div;
-				elseif(isset($_GET['success']) && $_GET['success'] == 'false'):
-					$tag->div('class="alert alert-danger" role="alert"');
-						$tag->imprime(DB_MSG_ERROR);
-					$tag->div;
-				else:
-				
-				endif;
+				new Msg(
+						isset($_GET['type'])?$_GET['type']:'default',
+						isset($_GET['msg'])?$_GET['msg']:'default'
+						);
 			$tag->div;
 		$tag->div;
 	$tag->div;
