@@ -58,6 +58,10 @@ define(PASS, '');
 define(DB_NAME, 'redesocialblog');
 
 
+//difinicao de mensagens do sistema
 //msgs de erro db
-define(DB_MSG_ERROR, 'Um erro ocoreu, os dados não foram cadastrados.');
-define(DB_MSG_SUCCESS, 'Cadastro realizado com sucesso.');
+define(CADASTRO_ERROR, 'cadastro_error');
+define(LOGIN_ERROR, 'login_error');
+//msg de sucesso
+define(CADASTRO_SUCCESS, 'cadastro_success');
+define(LOGIN_SUCCESS, 'login_success');
