@@ -22,6 +22,13 @@ $tag->div('class="container"');
 		$tag->div;
 		
 		$tag->div('class="col-lg-8"');
+			new Msg(
+					isset($_GET['type'])?$_GET['type']:'default',
+					isset($_GET['msg'])?$_GET['msg']:'default'
+			);
+		$tag->div;
+		
+		$tag->div('class="col-lg-8"');
 			$tag->a('href="#"');
 				$tag->img('class="icon_notification" src="../../img/icon-notification.png"');
 			$tag->a;
