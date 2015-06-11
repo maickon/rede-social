@@ -1,5 +1,4 @@
 <?php 
-
 global $tag, $config;
 
 $tag->div('class="container"');
