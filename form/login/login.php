@@ -11,9 +11,9 @@ $user->senha = $_POST['cadastro']['senha'];
 
 if($db->buscar_usuario('usuario', $user->login, $user->senha)):
 	$_SESSION["user_ativo"] = $user->login;
-	header('Location:'.USER_BASE_URL.'/index.php?login=true');
+	bild_lik_header(USER_BASE_URL, array('type'=>'success','msg'=>LOGIN_SUCCESS),'/index.php?');
 else:
-	header('Location:'.BASE_URL.'/index.php?login=false');
+	bild_lik_header(array('type'=>'error','msg'=>LOGIN_ERRORS), 'index.php?');
 endif;
 
 
