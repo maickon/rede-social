@@ -41,9 +41,13 @@ $config = new Config();
 //instancia de uma tag
 $tag = new Tags();
 
-//menus
+//menus pagina inicial
 $labels = array('Home','Projeto no Git','Sobre');
 $links = array('?p=home','https://github.com/maickon/rede-social','?p=sobre');
+
+//menu pagina usuario
+$user_menu = array('Me','Msg Feed','Music Feed', 'Video Feed', 'Foto Feed', 'Ranking', array('Config Me','Senha'));
+$user_links = array('?p=me','?p=msgfeed','?p=musicfeed', '?p=videofeed', '?p=fotofeed', '?p=ranking', array('?p=configme','?=senha'));
 
 define(HOME, 'home');
 define(HOME_PAGE, 'pages/home.php');
