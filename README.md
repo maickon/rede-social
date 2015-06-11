@@ -31,6 +31,15 @@
 					vai levar bastante tempo, entretanto o prazer de desenvolver uma rede social, pesquisar sobre o assunto e aprender 
 					não tem preço.
 </p>
+
+<h3>
+	Print da Página de usuário
+</h3>
+
+<p>
+	<img src="https://github.com/maickon/rede-social/blob/master/img/print.png?raw=true">
+</p>
+
 <h3>
 	Finalizando...
 </h3>
