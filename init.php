@@ -10,7 +10,7 @@
 define(BASE_PATH, dirname(__FILE__));
 define(BASE_URL, 'http://127.0.0.1/rede-social-maickon');
 define(USER_BASE_URL, 'http://127.0.0.1/rede-social-maickon/form/usuario');
-
+define(PHPMEILER,BASE_PATH.'/plugins/PHPMailer/PHPMailerAutoload.php');
 //carrega a pasta funcoes
 require_once BASE_PATH.'/funcoes/funcoes.php';
 
@@ -42,8 +42,8 @@ $config = new Config();
 $tag = new Tags();
 
 //menus pagina inicial
-$labels = array('Home','Projeto no Git','Sobre');
-$links = array('?p=home','https://github.com/maickon/rede-social','?p=sobre');
+$labels = array('Home','Projeto no Git','Sobre','Contato');
+$links = array('?p=home','https://github.com/maickon/rede-social','?p=sobre','?p=contato');
 
 //menu pagina usuario
 $user_menu = array('Me','Msg Feed','Music Feed', 'Video Feed', 'Foto Feed', 'Ranking', array('Config Me','Senha'));
@@ -54,6 +54,9 @@ define(HOME_PAGE, 'pages/home.php');
 
 define(SOBRE, 'sobre');
 define(SOBRE_PAGE, 'pages/sobre.php');
+
+define(CONTATO, 'contato');
+define(CONTATO_PAGE, 'pages/contato.php');
 
 //db
 define(HOST, '127.0.0.1');

@@ -27,6 +27,9 @@ class Config{
 		$this->create_user_path		= "form/usuario/create.php";
 		
 		$this->login_path 			= "form/login/login.php";
+		
+		//contato
+		$this->contato_path 		= "form/contato/contato.php";
 	}
 }
 ?>

@@ -17,6 +17,9 @@ class Rotas{
 			case SOBRE:require SOBRE_PAGE;
 			break;
 			
+			case CONTATO:require CONTATO_PAGE;
+			break;
+			
 			default: require HOME_PAGE;
 			break;
 		endswitch; 
